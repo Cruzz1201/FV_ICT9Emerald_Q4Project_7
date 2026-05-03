@@ -29,6 +29,41 @@
             padding-top: 10px; 
         }
 
+        #profbox{
+            background-color:rgba(255, 255, 255, 0.774);
+            align-items:center;
+            padding-left:30px;
+            display:flex;
+            flex-direction:column;
+            height:100%;
+            justify-content:center;
+            width:400px;
+
+        }
+        
+        #maincont{
+            background-color:rgba(222, 243, 255, 0.779);
+            border-radius:18px;
+            padding:40px;
+            max-width:900px;
+            width:100%;
+
+        }
+
+        #studentInfo{
+            background-color:rgba(255, 255, 255, 0.774);
+            align-items:center;
+            padding-left:30px;
+            display:flex;
+            flex-direction:column;
+            height:100%;
+            justify-content:center;
+            width:400px;
+
+        }
+           
+            
+
     </style>
 </head>
 
@@ -37,8 +72,9 @@
 
         <nav id="sidenav" style="background-color: rgba(255, 255, 255, 0.737);">
 
-            <img src="https://files.orangeapps.ph/disk001/School_Files/1/school-66/school_profile/1724046763-1128.png" style="width: 100px; height: 100px; margin-left: 25px;">
 
+            <img src="https://files.orangeapps.ph/disk001/School_Files/1/school-66/school_profile/1724046763-1128.png" style="width: 100px; height: 100px; margin-left: 50px; margin-right:10px; border-radius:50%;">
+        
             <br><br>
 
             <ul class="nav flex-column">
@@ -56,8 +92,65 @@
                 <a href="#logout" type="button" class="btn btn-sm" style="background-color: rgb(110, 128, 218); color: white; width: 100px;" onclick="LogOut()">Logout ➜]</a>
 
             </ul>
-
         </nav>
+    <script>
+
+        function LogOut(){
+        let confirmLogout = confirm("Exit now"); 
+            
+            if (confirmLogout) { //true
+                window.location.href = "index.html"; //index 
+            }
+        } 
+  
+    </script>
+
+<div class="container-fluid">
+<div id="maincont" >
+    <div class="row gap-8 align-items-center">
+    <div class="col-lg-4">
+        <div id="profbox">
+        <img src="https://i.pinimg.com/736x/9e/c9/19/9ec919468e1ed8af1002b551f5950a94.jpg" alt="Profile Picture" style="height:150px; border-radius:50%;">
+            <input type="file" class="form-control">
+            <button class="btn-upload mt-3" onclick="alert('Profile photo uploaded')">Change Profile</button>
+        </div>
+     </div>
+
+     
+
+     <div class="col-lg-4">
+     <div id="studentInfo">
+        <h1>Student ID Information</h1>
+        <h5>Student Name:</h5>
+        <h6>Precious Princess C. Dela Cruz</h6>
+
+        <br>
+
+        <h5>Student ID</h5>
+        <h6>6767676767</h6>
+
+        <br>
+
+        <h5>Contact Number</h5>
+        <h6>6767676767</h6>
+
+        <br>
+
+        <h5>Email</h5>
+        <h6>6767676767</h6>
+
+        <br>
+
+        <h5>Parent to Notify:</h5>
+        <h6>Josefina Gayle C. Dela Cruz</h6>
+
+                
     
+     </div>
+     </div>
+    </div>
+</div>
+</div>
+
 </body>
 </html>
