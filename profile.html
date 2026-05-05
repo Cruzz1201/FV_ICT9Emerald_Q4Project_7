@@ -12,7 +12,7 @@
             background-image: url('https://images-ext-1.discordapp.net/external/I-JdgJTlcPctiXu3L426KfqmqMuikQ1Oj-NJmcBcZAY/https/i.pinimg.com/1200x/5d/d4/8b/5dd48bdf8111b5c0aa98fdfdab244e45.jpg?format=webp&width=1104&height=621');
             background-repeat: no-repeat;
             background-size: cover;
-            font-family:Georgia, 'Times New Roman', Times, serif
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
          
         }
 
@@ -29,6 +29,10 @@
             padding-top: 10px; 
         }
 
+        a {
+            text-decoration: none;
+        }
+
         #profbox{
             background-color:rgba(255, 255, 255, 0.774);
             align-items:center;
@@ -42,7 +46,7 @@
         }
         
         #maincont{
-            background-color:rgba(222, 243, 255, 0.779);
+            background-color:rgba(255, 255, 255, 0.779);
             border-radius:18px;
             padding:40px;
             max-width:900px;
@@ -62,36 +66,45 @@
 
         }
            
-            
-
+        
     </style>
 </head>
 
 <body>
-    <div class="d-flex align-items-stretch">
+        <div class="d-flex align-items-stretch">
 
         <nav id="sidenav" style="background-color: rgba(255, 255, 255, 0.737);">
 
+            <img src="https://files.orangeapps.ph/disk001/School_Files/1/school-66/school_profile/1724046763-1128.png" style="width: 100px; height: 100px; margin-left: 25px;">
 
-            <img src="https://files.orangeapps.ph/disk001/School_Files/1/school-66/school_profile/1724046763-1128.png" style="width: 100px; height: 100px; margin-left: 50px; margin-right:10px; border-radius:50%;">
-        
             <br><br>
 
             <ul class="nav flex-column">
 
-                <h2 style="color: rgb(23, 34, 137); text-align: center;"><b>Profile</b></h2>
+                <h2 style="color: rgb(23, 34, 137); text-align: center;"><b>Dashboard Menu</b></h2>
 
-                <a href="#vn" style="color: rgb(40, 183, 255); text-align: left;">Virtual Notebooks</a>
+                <br>
+                
+                <a href="dashboard.html" style="color: rgb(42, 157, 215); text-align: left;"> 🏠︎ Home</a>
 
-                <a href="#tasks" style="color: rgb(40, 183, 255); text-align: left;">Tasks</a>
+                <br>
 
-                <a href="#profile" style="color: rgb(40, 183, 255); text-align: left;">Profile</a>
+                <a href="notebooks.html" style="color: rgb(40, 183, 255); text-align: left;">🗒 Class List</a>
+
+                <br>
+
+                <a href="tasks.html" style="color: rgb(40, 183, 255); text-align: left;">☑ Tasks</a>
+
+                <br>
+
+                <a href="profile.html" style="color: rgb(40, 183, 255); text-align: left;">𐀪 Profile</a>
 
                 <br><br>
 
                 <a href="#logout" type="button" class="btn btn-sm" style="background-color: rgb(110, 128, 218); color: white; width: 100px;" onclick="LogOut()">Logout ➜]</a>
 
             </ul>
+
         </nav>
     <script>
 
