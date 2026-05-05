@@ -30,23 +30,33 @@
         }
 
         #profbox{
-            background-color:rgba(255, 255, 255, 0.774);
+            background-color:rgba(255, 255, 255, 0.838);
             align-items:center;
             padding-left:30px;
             display:flex;
             flex-direction:column;
             height:100%;
             justify-content:center;
-            width:400px;
+            width:90%;
+            margin-top:40px;
+            margin-left:auto;
+            margin-right:auto;
+            padding-top:20px;
+            box-shadow:2px;
+            border: 4px dashed white;
+            
 
         }
         
         #maincont{
             background-color:rgba(222, 243, 255, 0.779);
             border-radius:18px;
-            padding:40px;
-            max-width:900px;
-            width:100%;
+            padding:0px;
+            max-width:1500px;
+            width:80%;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10%;
 
         }
 
@@ -58,7 +68,6 @@
             flex-direction:column;
             height:100%;
             justify-content:center;
-            width:400px;
 
         }
            
@@ -105,20 +114,32 @@
   
     </script>
 
-<div class="container-fluid">
+<div class="container-fluid d-flex justify-content-center">
 <div id="maincont" >
-    <div class="row gap-8 align-items-center">
-    <div class="col-lg-4">
+    <div class="row g-4 align-items-center d-flex">
+    <div class="col-lg-8-h5">
         <div id="profbox">
-        <img src="https://i.pinimg.com/736x/9e/c9/19/9ec919468e1ed8af1002b551f5950a94.jpg" alt="Profile Picture" style="height:150px; border-radius:50%;">
-            <input type="file" class="form-control">
-            <button class="btn-upload mt-3" onclick="alert('Profile photo uploaded')">Change Profile</button>
+        
+        <div class="d-flex align-items-center">
+            <img src="https://i.pinimg.com/736x/9e/c9/19/9ec919468e1ed8af1002b551f5950a94.jpg" alt="Profile Picture" style="height:100px; border-radius:50%;">
+
+            <div class="d-flex flex-column">
+            <div class="row g-10 justify-content-center">
+                
+                <div class="col-lg-8">
+                    <input type="file" class="form-control" style="width:500px;">
+                </div>
+                <div class="col-lg-8">
+                    <button class="btn-upload mt-3" onclick="alert('Profile photo uploaded')">Change Profile</button>
+                </div>
+            </div>
         </div>
      </div>
+    </div>
+</div>
 
      
-
-     <div class="col-lg-4">
+     <div class="col-lg-8-h5">
      <div id="studentInfo">
         <h1>Student ID Information</h1>
         <h5>Student Name:</h5>
