@@ -23,12 +23,22 @@
         }
 
         #sidenav {
-            height: 160vh;
+            height: 1000px;
             width: 245px;
             padding-left: 10px;
             padding-right: 10px;
             padding-top: 10px; 
+            display: block;
+            z-index: 1;
+            top: 0;
+            left: 0;
         }
+
+        .main {
+            margin-left: 160px;
+            padding: 0px 10px;
+        }
+
 
         a {
             text-decoration: none;
@@ -65,6 +75,7 @@
             margin-left:auto;
             margin-right:auto;
             margin-top:10%;
+            height:850px;
 
         }
 
@@ -83,6 +94,18 @@
             margin-right:auto;
             padding-top:20px;
             box-shadow:2px;
+
+        }
+
+        #title{
+            background-color:rgb(148, 221, 255);
+            border: rgba(240, 248, 255, 0.438) 3px;
+            width:180px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left:20px;
+            margin-top:30px;
+            text-align:center;
+            border-radius:40px;
 
         }
         
@@ -137,6 +160,11 @@
   
     </script>
 
+<div>
+<h1 id="title">PROFILE</h1>
+
+</div>
+
 <div class="container-fluid d-flex justify-content-center">
 <div id="maincont" >
     <div class="row g-4 align-items-center d-flex">
@@ -150,7 +178,7 @@
             <div class="row g-12 justify-content-center">
                 
                 <div class="col-lg-11">
-                    <input type="file" class="form-control" style="width:500px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border-radius:50px;border-color: rgba(240, 248, 255, 0.438);">
+                    <input type="file" class="form-control" style="width:450px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border-radius:50px;border-color: rgba(240, 248, 255, 0.438);">
                 </div>
                 <div class="col-lg-11">
                     <button class="btn-upload mt-3" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border-radius:50px; background-color:rgb(148, 221, 255); border-color: rgba(240, 248, 255, 0.438); width:170px; " onclick="alert('Profile photo uploaded')">Change Profile</button>
@@ -161,7 +189,6 @@
     </div>
 </div>
 
-     
      <div class="col-lg-8-h5">
      <div id="studentInfo">
         <h1 style="font-family:Bungee; margin-top:10px; color: rgb(23, 34, 137);;">Student ID Information</h1>
